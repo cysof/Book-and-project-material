@@ -1,0 +1,10 @@
+{% extends '_base.html' %}
+{% load static %}
+{%block title%}Home{%endblock title%}
+
+{%block content%}
+<h1>HompePage</h1>
+<form class="from-line mt-2 mt-md-0" action="{%url 'search_results'%}" method="GET">
+       <input name="q" class="form-control mr-sm-2" type="text" placeholder="search" aria-label="search">
+   </form>
+{%endblock content%}
